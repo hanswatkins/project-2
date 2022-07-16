@@ -6,19 +6,15 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import { Link, Route, Routes } from 'react-router-dom';
 
 
 const App = () => {
   return (
     <div className="App">
       <h1>App component</h1>
-      <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Resume />
-      <Contact />
-      <Footer />
+        <Header />
+        <Footer />
     </div>
   );
 }

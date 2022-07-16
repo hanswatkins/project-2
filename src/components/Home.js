@@ -1,5 +1,7 @@
 import React from 'react';
 import hansPic from './hans-pic-bw.jpg';
+import { useParams } from 'react-router-dom';
+
 const Home = () => {
     return (
         <div>
