@@ -1,14 +1,12 @@
 import React from 'react';
+import { Link, Route, Routes } from 'react-router-dom'
 import About from './About';
 import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
-import { useParams } from 'react-router-dom';
-import { Link, Route, Routes } from 'react-router-dom';
 
-
-const Header = () => {
+const MobileNav = () => {
     return (
         <div>
             <header>
@@ -28,9 +26,9 @@ const Header = () => {
                 <Route path="/resume" element={<Resume />}/>
                 <Route path="/contact" element={<Contact />}/>
 
-            </Routes>
+            </Routes>    
         </div>
     );
 };
 
-export default Header;
+export default MobileNav;

@@ -7,12 +7,12 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import { Link, Route, Routes } from 'react-router-dom';
+import MobileNav from './components/MobileNav';
 
 
 const App = () => {
   return (
     <div className="App">
-      <h1>App component</h1>
         <Header />
         <Footer />
     </div>
