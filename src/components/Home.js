@@ -1,14 +1,21 @@
 import React from 'react';
 import hansPic from './hans-pic-bw.jpg';
-import { useParams } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div>
-            <h1>Hans Watkins</h1>
-            <h2>Software Developer</h2>
-            <h2>Music Producer</h2>
-            <img src={hansPic} className="portrait" alt="me standing against a blurry background" />
+            <div className='container'>
+                <body>
+                    <div className='image-container'>
+                        <img src={hansPic} className="portrait" alt="me standing against a blurry background" />
+                        <div className='bio-container'>
+                            <h1 className='title'>HANS WATKINS</h1>
+                            <h2 className='software-dev-title'>software developer</h2>
+                            <h2 className='music-prod-title'>music producer</h2>
+                        </div>
+                    </div>
+                </body>
+            </div>
         </div>
     );
 };
