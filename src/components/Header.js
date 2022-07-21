@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import { Link, Route, Routes } from 'react-router-dom';
+import logo from './home (1) copy.png'
 
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
             <header>
                 <div className='element'>
                 <nav className='nav-bar'>
-                    <Link to="/"><img src='https://cdn-icons-png.flaticon.com/512/7470/7470549.png' className='logo' alt='img link to home'></img></Link>
+                    <Link to="/"><img src={logo} className='logo' alt='img link to home'></img></Link>
                     <ul className='nav-list'>
                         <li className='list-item'><Link to="/about">about</Link></li>
                         <li className='list-item'><Link to="/projects">projects</Link></li>
