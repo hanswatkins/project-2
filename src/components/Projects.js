@@ -1,33 +1,50 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const url = "https://owen-wilson-wow-api.herokuapp.com/wows/random"
-
-const options = {method: 'GET', headers: {Accept: 'application/json'}};
-
-const getWow = () => {
-
-fetch(url, options)
-    .then(response => response.json())
-    .then(response => {
-
-        document.querySelector('.movie').innerHTML = response[0].movie
-        document.querySelector('.character').innerHTML = response[0].character
-        document.querySelector('.poster').src = response[0].poster
-        // document.querySelector('.video').src = response[0].video[0]
-        document.querySelector('.video').src = response[0].video
-
-            })
-            .catch(err => console.error(err));
-}
 const Projects = () => {
+    const [movie, setMovie] = useState()
+    const [error, setError] = useState()
+
+    const url = "https://owen-wilson-wow-api.herokuapp.com/wows/random"
+    
+    const options = {method: 'GET', headers: {Accept: 'application/json'}};
+    
+    console.log(movie)
+    const getWow = () => {
+    
+    fetch(url, options)
+        .then(response => response.json())
+        .then(response => {
+            
+            setMovie(response[0])
+        })
+        .catch(err => {
+            setError(err)
+        })
+            // document.querySelector('.movie').innerHTML = response[0].movie
+            // document.querySelector('.character').innerHTML = response[0].character
+            // document.querySelector('.poster').src = response[0].poster
+            // document.querySelector('.video').src = response[0].video
+    } 
+    useEffect(()=>{
+        getWow() 
+
+    },[])
+    if(!movie) {
+        return null
+    }
+    if(error) {
+        return <p>oh no, you encountered an error! try again</p>
+    }
     return (
         <div className='projects-div'>
-            <button type='submit' onClick={getWow}>Click me then check console</button>
-            <div className='movie'></div>
-            <div className='character'></div>
-            <video className='video' src="" width='320' height='240' controls>
+            <h1 className='wow-title'>Wow Generator!</h1>
+            <p className='wow-facts-p'>In {movie.movie}, Owen Wilson plays {movie.character}. He says "Wow" {movie.total_wows_in_movie} times!</p>
+            <div className='video-wrapper'>
+            <video className='video' src={movie.video["1080p"]} autoPlay>
             </video>
-            <img className='poster' src='' width='320' height='auto' alt=''></img>
+            <button type='submit' onClick={getWow}>Wow Me</button>
+            </div>
+    
 
             
 
