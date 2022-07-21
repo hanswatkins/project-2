@@ -1,28 +1,35 @@
 import React, { useState } from 'react';
 
-const url = "https://freesound.org/apiv2/search/text/?query=piano&token=dnMog3P0vhwYkNgMSeESULPEHkZN3jlouKQlO958	"
+const url = "https://owen-wilson-wow-api.herokuapp.com/wows/random"
 
-const fetchTheStuff = () => {
+const options = {method: 'GET', headers: {Accept: 'application/json'}};
 
-fetch(url)
-    .then(res => {
-        return res.json();
-    })
-    .then(res => {
-        console.log('success!', res);
-    })
-    .catch(err => {
-        console.log('something went wrong...', err);
-    })
-    
+const getWow = () => {
+
+fetch(url, options)
+    .then(response => response.json())
+    .then(response => {
+
+        document.querySelector('.movie').innerHTML = response[0].movie
+        document.querySelector('.character').innerHTML = response[0].character
+        document.querySelector('.poster').src = response[0].poster
+        // document.querySelector('.video').src = response[0].video[0]
+        document.querySelector('.video').src = response[0].video
+
+            })
+            .catch(err => console.error(err));
 }
-
 const Projects = () => {
-   return (
+    return (
         <div className='projects-div'>
-            <button type='submit' onClick={fetchTheStuff}>Click me check console</button>
-            <div className='joke-response'></div>
-            <div className='punchline'></div>
+            <button type='submit' onClick={getWow}>Click me then check console</button>
+            <div className='movie'></div>
+            <div className='character'></div>
+            <video className='video' src="" width='320' height='240' controls>
+            </video>
+            <img className='poster' src='' width='320' height='auto' alt=''></img>
+
+            
 
 
             
