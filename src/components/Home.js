@@ -1,5 +1,6 @@
 import React from 'react';
-import hansPic from './hans-pic-bw.jpg';
+import hansPicBW from './hans-pic-bw.jpg';
+import hansPic from './hans-pic.jpg';
 
 const Home = () => {
     return (
