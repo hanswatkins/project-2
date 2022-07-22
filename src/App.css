@@ -52,7 +52,7 @@
 		opacity: 0; 
 	}
 	100% { 
-		opacity: 1; 
+		opacity: 1;
 	}
 }
 
@@ -237,7 +237,7 @@ a {
 .footer-links a {
 	list-style: none;
 	padding: 10px;
-	animation: 1s ease-out 0s 1 slideInBottom;
+	animation: 1s ease-out 0s 1s slideInBottom;
 	color: #191919;
 	font-family: SourceCodeProRegular;
 	
@@ -349,6 +349,7 @@ a {
 	.email {
 		transition: 0.5s;
 		animation: 4s fadeIn;
+		text-decoration: underline;
 	}
 	
 	button {
@@ -488,4 +489,122 @@ a {
 	}
 
 
+}
+
+@media all and (max-width: 375px) {
+
+	.wow-facts-p {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+
+	.contact-div {
+		min-height: 87vh;
+		display: block;
+		padding-top: 40vh;
+	}
+
+	.video {
+		width: 320px;
+		height: 240px;
+	}
+
+	.nav-list {
+		width: 100%;
+		padding-top: 10px;
+		
+	}
+
+	.container {
+		text-align: center;
+
+	}
+
+	.flex-padding {
+		display: none;
+	}
+
+	.logo {
+		display: block;
+		position: relative;
+		top: 0px;
+		right: 45vw;
+		height: 30px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.portrait {
+		height: 300px;
+	}
+
+	.image-container {
+		flex-direction: column;
+		padding-top: 15vh;
+		
+	}
+
+	body {
+		min-height: 84vh;
+		min-width: 100vw;
+		line-height: 1;
+	}
+
+	.piano-pic {
+		height: 250px;
+	}
+
+	.about-header {
+		padding-top: 1rem;
+	}
+
+	.title {
+		color: #628d8d;
+		animation: 5s fadeIn;
+		padding-top: 1rem;
+	}
+	
+	.software-dev-title {
+		color: dimgrey;
+		animation: 6s fadeIn;
+	}
+
+	.music-prod-title {
+		color: lightgrey;
+		animation: 8s fadeIn;
+	}
+
+	.image-container-about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5vh;
+	animation: 2s fadeIn, 1.5s smallSlide;
+	}
+
+	.about-paragraph {
+		text-align: left;
+		padding: 2rem;
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+
+	ul.skills-list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(140px, 200px));
+		padding: 0px;
+		margin: 20px 0px 0px;
+		overflow: hidden;
+		list-style: none;
+		padding-bottom: 2rem;
+
+	}
+
+	.projects-div {
+		min-height: 90vh
+
+	}
 }

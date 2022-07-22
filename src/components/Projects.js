@@ -20,10 +20,6 @@ const Projects = () => {
         .catch(err => {
             setError(err)
         })
-            // document.querySelector('.movie').innerHTML = response[0].movie
-            // document.querySelector('.character').innerHTML = response[0].character
-            // document.querySelector('.poster').src = response[0].poster
-            // document.querySelector('.video').src = response[0].video
     } 
     useEffect(()=>{
         getWow() 
