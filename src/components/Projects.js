@@ -8,7 +8,6 @@ const Projects = () => {
     
     const options = {method: 'GET', headers: {Accept: 'application/json'}};
     
-    console.log(movie)
     const getWow = () => {
     
     fetch(url, options)
