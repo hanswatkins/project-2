@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
 import About from './About';
 import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import { Link, Route, Routes } from 'react-router-dom';
-import logo from './home (1) copy.png'
+
 
 
 const Header = () => {
@@ -25,7 +24,7 @@ const Header = () => {
                         <li className='list-item-5'><Link to="/contact">contact</Link></li>
                     </ul>
 
-          
+
                     
                     <div className='menu'>
                         <div className='menu-line'></div>
