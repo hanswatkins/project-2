@@ -89,6 +89,16 @@ li {
 	color: #191919;
 }
 
+h3 {
+	font-family: SourceCodeProBold;
+}
+
+p, li, h3, h1 {
+	font-family: SourceCodeProRegular;
+	color: #191919
+}
+
+
 /* home page */
 
 
@@ -154,10 +164,6 @@ h2 {
 	background-color: #f5f5f5;
 	padding-top: 0px;
 	position: fixed;
-
-	
-
-
 }
 
 
@@ -318,8 +324,9 @@ a {
 	}
 
 	.skills-list li:hover {
-		font-size: 25px;
+		color:rgb(156, 120, 120);
 		transition: 0.3s;
+		cursor:default;
 	}
 
 	.video {
@@ -390,11 +397,30 @@ a {
 		padding-top: 43vh;
 	}
 
+	.resume {
+		text-align: left;
+		padding-top: 5rem;
+		line-height: 2;
+		margin-left: 20vw;
+		margin-right: 20vw;
+		padding-bottom: 6rem;
+	}
+
 
 
 
 
 @media all and (max-width: 700px) {
+
+	.resume {
+		text-align: left;
+		font-size: 10px;
+		padding-top: 5rem;
+		line-height: 2;
+		margin-left: 3vw;
+		margin-right: 3vw;
+		padding-bottom: 3rem;
+	}
 
 	.image-container {
 		display: flex;
@@ -535,6 +561,16 @@ a {
 }
 
 @media all and (max-width: 375px) {
+
+	.resume {
+		text-align: left;
+		font-size: 10px;
+		padding-top: 5rem;
+		line-height: 2;
+		margin-left: 3vw;
+		margin-right: 3vw;
+		padding-bottom: 3rem;
+	}
 
 	p.wow-facts-p {
 		padding-bottom: 1rem;

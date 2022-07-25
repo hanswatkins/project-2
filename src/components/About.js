@@ -18,7 +18,7 @@ const About = () => {
                         <br></br>
                         Now, my curiosity has led me in the direction of Software Engineering. In June I enrolled in General Assembly's Software Engineering Immersive and I'll be graduating with over 500 hours of engineering experience in August 2022.</p>
                         
-                        <h2>TECHNOLOGIES:</h2>
+                        <h2>TECHNOLOGIES</h2>
 
                     
                         
