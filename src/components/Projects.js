@@ -31,15 +31,18 @@ const Projects = () => {
         return <p>oh no, you encountered an error! try again</p>
     }
     return (
-        <div className='projects-div'>
-            <h1 className='wow-title'>Wow Generator!</h1>
-            <p className='wow-facts-p'>In {movie.movie}, Owen Wilson plays {movie.character}. He says "Wow" {movie.total_wows_in_movie} times!</p>
-            <div className='video-wrapper'>
-            <video className='video' src={movie.video["1080p"]} autoPlay>
-            </video>
-            <button type='submit' onClick={getWow}>Wow Me</button>
-            </div>
-    
+        <div className='projects-wrapper'>
+            <div className='projects-div'>
+                <h1 className='wow-title'>Wow Generator!</h1>
+                <p className='wow-facts-p'>In {movie.movie}, Owen Wilson plays {movie.character}. He says "Wow" {movie.total_wows_in_movie} times!</p>
+                <div className='video-wrapper'>
+                <video className='video' src={movie.video["1080p"]} autoPlay>
+                </video>
+                <button type='submit' onClick={getWow}>Wow Me</button>
+                </div>
+
+
+        </div>
 
             
 

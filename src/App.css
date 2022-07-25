@@ -90,10 +90,12 @@ li {
 }
 
 /* home page */
+
+
 .container {
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	padding-bottom: 7vh;
 	justify-content: space-evenly;
 	text-align: left;
 	color: #191919;
@@ -106,7 +108,7 @@ li {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding-top: 20vh;
+	padding-top: 25vh;
 	animation: 2s fadeIn, 1.5s smallSlide;
 
 }
@@ -150,9 +152,14 @@ h2 {
 	font-size: 18px;
 	width: 100%;	
 	background-color: #f5f5f5;
-	margin-top: 20px;
+	padding-top: 0px;
+	position: fixed;
+
+	
+
 
 }
+
 
 .nav-bar a {
 	text-decoration: none;
@@ -252,6 +259,10 @@ a {
 	padding-top: 5vh;
 	animation: 3s fadeIn, 2s smallSlide;
 	}
+
+.bio-container-about {
+	padding-top: 5vh;
+}
 
 	.about-paragraph {
 		text-align: left;
@@ -379,7 +390,20 @@ a {
 	}
 
 
+
 @media all and (max-width: 700px) {
+
+	.image-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding-top: 25vh;
+		animation: 2s fadeIn, 1.5s smallSlide;
+		flex-direction: column;
+
+	
+	}
 	
 	.contact-div {
 		min-height: 87vh;
@@ -419,11 +443,6 @@ a {
 
 	.portrait {
 		height: 400px;
-	}
-
-	.image-container {
-		flex-direction: column;
-		
 	}
 
 	body {
@@ -480,18 +499,52 @@ a {
 		margin: 20px 0px 0px;
 		overflow: hidden;
 		list-style: none;
+		padding-bottom: 15px;
+
 
 	}
 
 	.projects-div {
-		min-height: 90vh
+		min-height: 90vh;
+		padding-top: 8vh;
 
 	}
+
+	.wow-facts-p {
+		padding: 0px 1rem;
+	}
+
+	.projects-wrapper {
+		padding-bottom: 3rem;
+	}
+
+	.wow-facts-p {
+		padding-bottom: 1rem;
+	}
+
+
 
 
 }
 
 @media all and (max-width: 375px) {
+
+	p.wow-facts-p {
+		padding-bottom: 1rem;
+	}
+
+
+	.image-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding-top: 25vh;
+		animation: 2s fadeIn, 1.5s smallSlide;
+		flex-direction: column;
+
+	
+	}
 
 	.wow-facts-p {
 		padding-left: 2rem;
@@ -604,7 +657,12 @@ a {
 	}
 
 	.projects-div {
-		min-height: 90vh
+		min-height: 90vh;
 
 	}
+
+	.wow-facts-p {
+		padding: 0px 1rem;
+	}
+
 }
