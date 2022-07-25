@@ -340,6 +340,7 @@ a {
 
 	.wow-title {
 		padding: 1rem;
+		padding-top: 4rem;
 		animation: 2s fadeIn, 2s smallSlide;
 	}
 
@@ -384,10 +385,12 @@ a {
 	}
 
 	.contact-div {
-		min-height: 89vh;
+		min-height: 95vh;
 		display: block;
-		padding-top: 40vh;
+		padding-top: 43vh;
 	}
+
+
 
 
 
@@ -406,9 +409,13 @@ a {
 	}
 	
 	.contact-div {
-		min-height: 87vh;
+		min-height: 95vh;
 		display: block;
 		padding-top: 40vh;
+	}
+
+	.contact-div-2 {
+		padding-top: 20px;
 	}
 
 	.video {
