@@ -190,6 +190,7 @@ a {
 	text-decoration: none;
 	color: #191919;
 	font-size: 12px;
+	font-family: SourceCodeProRegular;
 }
 .nav-list{
 	display: inline-block;
