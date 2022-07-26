@@ -58,7 +58,7 @@
 
 @keyframes move {
 	from {
-		box-shadow: 0px 0px rgb(164, 164, 164);
+		box-shadow: 0px 0px rgb(255, 150, 3);
 	}
 	to {
 		box-shadow: 13px 13px  rgb(164, 164, 164)
@@ -87,13 +87,14 @@ body {
 
 li {
 	color: #191919;
+	
 }
 
 h3 {
 	font-family: SourceCodeProBold;
 }
 
-p, li, h3, h1 {
+p, li, h3, h1, a {
 	font-family: SourceCodeProRegular;
 	color: #191919
 }
@@ -302,6 +303,12 @@ a {
 	.piano-pic {
 		height: 500px;
 		animation: 5s move forwards;
+		transition: 0.3s;
+	}
+
+	.piano-pic:hover {
+		height: 520px;
+		transition: 0.3s;
 	}
 
 	.about-paragraph {
@@ -477,6 +484,11 @@ a {
 
 	.portrait {
 		height: 400px;
+		transition: 0.2s
+	}
+
+	.portrait:hover {
+		background-color: #191919;
 	}
 
 	body {
