@@ -106,7 +106,7 @@ p, li, h3, h1, a {
 .container {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 7vh;
+	padding-bottom: 6vh;
 	justify-content: space-evenly;
 	text-align: left;
 	color: #191919;
@@ -119,7 +119,7 @@ p, li, h3, h1, a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding-top: 25vh;
+	padding-top: 30vh;
 	animation: 2s fadeIn, 1.5s smallSlide;
 
 }
@@ -303,13 +303,8 @@ a {
 	.piano-pic {
 		height: 500px;
 		animation: 5s move forwards;
-		transition: 0.3s;
 	}
 
-	.piano-pic:hover {
-		height: 520px;
-		transition: 0.3s;
-	}
 
 	.about-paragraph {
 		margin-left: 30vw;
@@ -484,12 +479,8 @@ a {
 
 	.portrait {
 		height: 400px;
-		transition: 0.2s
 	}
 
-	.portrait:hover {
-		background-color: #191919;
-	}
 
 	body {
 		min-height: 90vh;
